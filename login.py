@@ -2,6 +2,9 @@
 USERNAME = "admin"
 PASSWORD = "P@ssw0rd123"
 DB_PASSWORD = "SuperSecret123"
+API_KEY = 123456789-Keyyyyy
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 my_secret_key = "sk_test"
 def authenticate(input_user, input_pass):
 if input_user == USERNAME and input_pass == PASSWORD:
